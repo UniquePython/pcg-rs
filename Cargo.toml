@@ -1,16 +1,16 @@
 [package]
-name          = "pcg-rs"
-version       = "0.1.0"
-edition       = "2024"
-authors       = ["UniquePython"]
-description   = ""
-license       = "MIT"
-repository    = "https://github.com/UniquePython/pcg-rs"
-homepage      = "https://github.com/UniquePython/pcg-rs"
-readme        = "README.md"
-keywords      = []
-categories    = []
-exclude       = [".gitignore"]
+name = "pcg-rs"
+version = "0.1.0"
+edition = "2024"
+authors = ["UniquePython"]
+description = "A fast, minimal PCG32 random number generator"
+license = "MIT"
+repository = "https://github.com/UniquePython/pcg-rs"
+homepage = "https://github.com/UniquePython/pcg-rs"
+readme = "README.md"
+keywords = ["rng", "random", "pcg", "pcg32", "no-std"]
+categories = ["algorithms", "no-std"]
+exclude = [".gitignore"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
@@ -19,11 +19,11 @@ exclude       = [".gitignore"]
 [dev-dependencies]
 
 [profile.dev]
-opt-level     = 0
-debug         = true
+opt-level = 0
+debug = true
 
 [profile.release]
-opt-level     = 3
-lto           = true
+opt-level = 3
+lto = true
 codegen-units = 1
-strip         = true
+strip = true
